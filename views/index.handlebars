@@ -1,6 +1,24 @@
-<h1>Burgers</h1>
+<h1>Eat Da Burgers!</h1>
 
-<h2>It's Time For You To Eat Some Burgers!</h2>
+<<h2>Burgers for you to DEVOUR!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless eaten}}
+      {{> burgers/burgers-block eaten=false}}
+    {{/unless}}
+  {{/each}}   
+</ul>
+
+<h2>Burgers That You Have Devoured!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if eaten}}
+      {{> burgers/burger-block eaten=true}}
+    {{/if}}
+  {{/each}}
+</ul>
 
 <h2>Enter a Burger You Want To Eat Then Hit The Add Button</h2>
 <form class="create-form">
