@@ -2,7 +2,7 @@
 	{{name}}
 
 	<button class="change-eaten" data-id="{{id}}" data-noteaten="{{noteaten}}">
-		{{#if noteaten}} Devour!
+		{{#if !eaten}} Devour!{{/if}}
 	</button>
 
 </li>
