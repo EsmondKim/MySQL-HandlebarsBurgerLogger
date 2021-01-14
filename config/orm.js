@@ -5,8 +5,8 @@ let connection = require("./connection.js");
 //These are the methods you will need to use in order to retrieve 
 //and store data in your database.
 
-selectAll()
-insertOne()
-updateOne()
+// selectAll()
+// insertOne()
+// updateOne()
 
-module.exports = orm;
+// module.exports = orm;
