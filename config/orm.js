@@ -49,9 +49,9 @@ var orm = {
     },
     insertOne: function(table, cols, vals, cb) {
       var queryString = "INSERT INTO " + table;
-  
+      console.log(cols.toString(), "hello")
       queryString += " (";
-      queryString += cols.toString();
+      queryString += "burger_name" //cols.toString();
       queryString += ") ";
       queryString += "VALUES (";
       queryString += printQuestionMarks(vals.length);
@@ -70,8 +70,8 @@ var orm = {
     updateOne: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
-      queryString += " SET ";
-      queryString += objToSql(objColVals);
+      queryString += " SET eaten = ";
+      queryString += 1  //objToSql(objColVals);
       queryString += " WHERE ";
       queryString += condition;
   
