@@ -14,7 +14,7 @@
 This app uses MySQL and Handlebars to store items in SQL database in the backend and then uses Handlebars to render the items in the frontend.
 
 Sceenshots
-![Here is a screenshot of the Eat Da Burgers App.](/assets/img/screenshot.png)
+![Here is a screenshot of the Eat Da Burgers App.](./public/assets/img/screenshot.png)
 
 ## Installation
 The app requires installation of express, express-handlebars and MySql to operate.  
