@@ -1,33 +1,50 @@
-<h1>Eat Da Burgers!</h1>
+<div class="container">
 
-<h2>Burgers for you to DEVOUR!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burgers-block eaten=false}}
-    {{/unless}}
-  {{/each}}   
-</ul>
-
-<h2>Burgers That You Have Devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burgers-block eaten=true}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Enter a Burger You Want To Eat Then Hit The Add Button</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burg">Burger:</label>
-    <input type="text" id="burg" name="name" placeholder="What Kind Of Burger Do You Want To Add?">
+  <div class="row">
+    <div class="col-xl-12 col-md-6 col-xs-6">
+    <br>
+    <p> </p>
+    <br>
+    </div>
   </div>
 
-  <button type="submit">Add Yo' Burger</button>
+  <h1 class="text-center">Eat Da Burgers!</h1>
+  <div class="row">
+    <section class="col-xl-6 col-sm-6 col-xs-6; card" style="float: left; background-color: rgb(247, 244, 0); border-style: solid; border-color: red; border-radius: 25px; padding-bottom: 25px;">
+  <h2>Burgers for you to DEVOUR!</h2>
+    <ul class="list-group list-group-flush">
+      {{#each burgers}}
+        {{#unless eaten}}
+        {{> burgers/burgers-block eaten=false}}
+      {{/unless}}
+      {{/each}}   
+    </ul>
+    </section>
 
+  <section class="col-xl-6 col-sm-6 col-xs-6; card" style="float: left; background-color: rgb(247, 244, 0); border-style: solid; border-color: red; border-radius: 25px; padding-bottom: 25px;">
+    <h2 class="text-center">Burgers That You Have Devoured!</h2>
+    <ul class="list-group list-group-flush">
+      {{#each burgers}}
+        {{#if eaten}}
+        {{> burgers/burgers-block eaten=true}}
+      {{/if}}
+      {{/each}}
+    </ul>
+    </section>
+    </div>
+   
+    <section class="col-xl-12 col-sm-12 col-xs-12; card" style="background-color: rgb(247, 244, 0); border-style: solid; border-color: red; border-radius: 25px; padding-bottom: 25px;">
+    <h2 class="text-center">Enter a Burger You Want To Eat Then Hit The Add Button</h2>
+      <form class="create-form">
+
+    <div class="form-group">
+      <label for="burg">Burger:</label>
+      <input type="text" id="burg" name="name" placeholder="What Kind Of Burger Do You Want To Add?">
+        </div>
+
+        <button type="submit">Add Yo' Burger</button>
 </form>
+</section>
+
+</div>
+ 
