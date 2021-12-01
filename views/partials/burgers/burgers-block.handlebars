@@ -1,9 +1,15 @@
-<li><class="list-group-item"><i class="fas fa-hamburger"></i>
+<li class="list-group-item"><i class="fas fa-hamburger"></i>
 {{burger_name}}
 
 {{#unless eaten}}
-	<button class="change-eaten" data-id="{{id}}" data-noteaten="{{noteaten}}">
+	<button class="change-eaten" data-id="{{this.id}}" data-noteaten="{{this.noteaten}}">
 		 Devour!
 	</button>
 {{/unless}}
+
+{{#if eaten}}
+	<button class="delete-burger" data-id="{{this.id}}" data-noteaten="{{this.noteaten}}">
+		 Delete Burger!
+	</button>
+{{/if}}
 </li>
